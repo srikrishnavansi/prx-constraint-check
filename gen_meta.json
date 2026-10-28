@@ -1,0 +1,325 @@
+{
+ "model": "Photoroom/prx-512-t2i-sft-distilled",
+ "steps": 8,
+ "guidance": 1.0,
+ "count00": {
+  "seed": 0,
+  "secs": 13.5,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "count01": {
+  "seed": 1,
+  "secs": 7.6,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "count02": {
+  "seed": 2,
+  "secs": 8.9,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "count03": {
+  "seed": 3,
+  "secs": 7.5,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "count04": {
+  "seed": 4,
+  "secs": 6.9,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "count05": {
+  "seed": 5,
+  "secs": 7.3,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "count06": {
+  "seed": 6,
+  "secs": 7.3,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "count07": {
+  "seed": 7,
+  "secs": 7.7,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "count08": {
+  "seed": 8,
+  "secs": 7.6,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "count09": {
+  "seed": 9,
+  "secs": 7.7,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "no_text00": {
+  "seed": 10,
+  "secs": 8.3,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "no_text01": {
+  "seed": 11,
+  "secs": 7.6,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "no_text02": {
+  "seed": 12,
+  "secs": 7.4,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "no_text03": {
+  "seed": 13,
+  "secs": 7.2,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "no_text04": {
+  "seed": 14,
+  "secs": 7.1,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "no_text05": {
+  "seed": 15,
+  "secs": 7.3,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "no_text06": {
+  "seed": 16,
+  "secs": 6.8,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "no_text07": {
+  "seed": 17,
+  "secs": 6.8,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "no_text08": {
+  "seed": 18,
+  "secs": 7.1,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "no_text09": {
+  "seed": 19,
+  "secs": 7.0,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "color00": {
+  "seed": 20,
+  "secs": 7.1,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "color01": {
+  "seed": 21,
+  "secs": 8.1,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "color02": {
+  "seed": 22,
+  "secs": 7.2,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "color03": {
+  "seed": 23,
+  "secs": 7.0,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "color04": {
+  "seed": 24,
+  "secs": 6.7,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "color05": {
+  "seed": 25,
+  "secs": 6.1,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "color06": {
+  "seed": 26,
+  "secs": 6.0,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "color07": {
+  "seed": 27,
+  "secs": 6.5,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "color08": {
+  "seed": 28,
+  "secs": 6.8,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "color09": {
+  "seed": 29,
+  "secs": 7.0,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "spatial00": {
+  "seed": 30,
+  "secs": 7.2,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "spatial01": {
+  "seed": 31,
+  "secs": 7.4,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "spatial02": {
+  "seed": 32,
+  "secs": 7.3,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "spatial03": {
+  "seed": 33,
+  "secs": 7.0,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "spatial04": {
+  "seed": 34,
+  "secs": 7.5,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "spatial05": {
+  "seed": 35,
+  "secs": 7.1,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "spatial06": {
+  "seed": 36,
+  "secs": 7.4,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "spatial07": {
+  "seed": 37,
+  "secs": 7.2,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "spatial08": {
+  "seed": 38,
+  "secs": 7.0,
+  "size": [
+   512,
+   512
+  ]
+ },
+ "spatial09": {
+  "seed": 39,
+  "secs": 6.4,
+  "size": [
+   512,
+   512
+  ]
+ }
+}

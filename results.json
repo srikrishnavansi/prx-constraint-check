@@ -1,0 +1,842 @@
+{
+ "judge": "claude-haiku-5-5",
+ "summary": {
+  "per_type": {
+   "count": {
+    "pass_run1": 7,
+    "pass_run2": 7,
+    "agree": 10,
+    "n": 10
+   },
+   "no_text": {
+    "pass_run1": 8,
+    "pass_run2": 7,
+    "agree": 9,
+    "n": 10
+   },
+   "color": {
+    "pass_run1": 10,
+    "pass_run2": 10,
+    "agree": 10,
+    "n": 10
+   },
+   "spatial": {
+    "pass_run1": 9,
+    "pass_run2": 9,
+    "agree": 10,
+    "n": 10
+   }
+  },
+  "pass_run1": 34,
+  "pass_run2": 33,
+  "judge_agree_k2": 39,
+  "pass_both_runs": 33,
+  "px_white_pass": 23,
+  "judge_white_run1": 31,
+  "judge_vs_pixel_white_agree_run1": 32,
+  "notext_with_text_seen_run1": 2,
+  "usd_pack_total": 0.0111
+ },
+ "rows": [
+  {
+   "id": "count00",
+   "type": "count",
+   "prompt": "exactly 3 red ceramic mugs in a row, product photo on a pure white seamless background, studio lighting",
+   "constraint": "exactly 3 mugs, all red",
+   "px_white_frac": 0.961,
+   "px_white": true,
+   "j1": {
+    "observed": "Three red ceramic mugs are visible, all red, arranged in a group with no others.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "Three red ceramic mugs are visible, two behind and one in front, all red.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "count01",
+   "type": "count",
+   "prompt": "exactly 2 white sneakers side by side, product photo on a pure white seamless background, studio lighting",
+   "constraint": "exactly 2 sneakers",
+   "px_white_frac": 1.0,
+   "px_white": true,
+   "j1": {
+    "observed": "Two white sneakers are visible side by side, viewed from the front, and no other shoes are present.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "Two white sneakers are visible side by side, one on the left and one on the right, facing the camera.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "count02",
+   "type": "count",
+   "prompt": "exactly 4 glass perfume bottles, product photo on a pure white seamless background, studio lighting",
+   "constraint": "exactly 4 perfume bottles",
+   "px_white_frac": 0.208,
+   "px_white": false,
+   "j1": {
+    "observed": "Four glass perfume bottles are clearly visible, counted one by one from left to right.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "Four glass perfume bottles are clearly visible, arranged side by side, with no others present.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "count03",
+   "type": "count",
+   "prompt": "exactly 5 lemons, product photo on a pure white seamless background, studio lighting",
+   "constraint": "exactly 5 lemons",
+   "px_white_frac": 0.993,
+   "px_white": true,
+   "j1": {
+    "observed": "Counting visible lemons: top-left, top-right, left-middle, front-left, center-front, right, and a small partly hidden one at top-center, so seven total.",
+    "constraint_met": false,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "Seven lemons are visible: two at the top, one on the far left, one peeking behind the center, one center front, one bottom left, and one on the right.",
+    "constraint_met": false,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "count04",
+   "type": "count",
+   "prompt": "exactly 2 leather wallets, product photo on a pure white seamless background, studio lighting",
+   "constraint": "exactly 2 wallets",
+   "px_white_frac": 0.887,
+   "px_white": false,
+   "j1": {
+    "observed": "Two orange-red leather wallets are visible, one behind and offset from the other, with a dry branch on the left edge.",
+    "constraint_met": true,
+    "white_background": false,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "Two orange-red leather wallets are clearly visible, one behind and slightly left of the other.",
+    "constraint_met": true,
+    "white_background": false,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "count05",
+   "type": "count",
+   "prompt": "exactly 3 lipsticks standing upright, product photo on a pure white seamless background, studio lighting",
+   "constraint": "exactly 3 lipsticks",
+   "px_white_frac": 0.873,
+   "px_white": false,
+   "j1": {
+    "observed": "Counting the upright lipsticks, there are exactly three: one dark red, one coral-red, and one light coral.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "Three lipsticks are clearly visible standing upright, one red, one coral, one coral-red, with no others.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "count06",
+   "type": "count",
+   "prompt": "exactly 6 macarons stacked, product photo on a pure white seamless background, studio lighting",
+   "constraint": "exactly 6 macarons",
+   "px_white_frac": 0.707,
+   "px_white": false,
+   "j1": {
+    "observed": "Six macarons are in the three front stacks, but about four more are visible in the background on the left and right, so roughly ten are visible in total.",
+    "constraint_met": false,
+    "white_background": false,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "Six macarons form the three front stacks, but at least four more are visible in the background, so the total exceeds six.",
+    "constraint_met": false,
+    "white_background": false,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "count07",
+   "type": "count",
+   "prompt": "exactly 1 wristwatch, product photo on a pure white seamless background, studio lighting",
+   "constraint": "exactly 1 watch",
+   "px_white_frac": 0.389,
+   "px_white": false,
+   "j1": {
+    "observed": "One wristwatch is visible with a navy bezel and gold-tone bracelet, resting on a white surface with a blurred beige background.",
+    "constraint_met": true,
+    "white_background": false,
+    "any_text_visible": true
+   },
+   "j2": {
+    "observed": "One wristwatch is visible with a navy bezel and gold-tone bracelet, resting on a white surface with a blurred beige background.",
+    "constraint_met": true,
+    "white_background": false,
+    "any_text_visible": true
+   }
+  },
+  {
+   "id": "count08",
+   "type": "count",
+   "prompt": "exactly 4 candles in jars, product photo on a pure white seamless background, studio lighting",
+   "constraint": "exactly 4 candles",
+   "px_white_frac": 0.759,
+   "px_white": false,
+   "j1": {
+    "observed": "Five candle jars are visible: left, back center-left, back right, front center, and right front.",
+    "constraint_met": false,
+    "white_background": true,
+    "any_text_visible": true
+   },
+   "j2": {
+    "observed": "I count five candle jars: two at the back, one front-left, one front-center, and one front-right.",
+    "constraint_met": false,
+    "white_background": true,
+    "any_text_visible": true
+   }
+  },
+  {
+   "id": "count09",
+   "type": "count",
+   "prompt": "exactly 3 skincare tubes, product photo on a pure white seamless background, studio lighting",
+   "constraint": "exactly 3 tubes",
+   "px_white_frac": 0.713,
+   "px_white": false,
+   "j1": {
+    "observed": "Three white skincare tubes are clearly visible, one on the left, one center, and one on the right.",
+    "constraint_met": true,
+    "white_background": false,
+    "any_text_visible": true
+   },
+   "j2": {
+    "observed": "Three white skincare tubes are clearly visible, one on the left, one in the center, and one on the right.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": true
+   }
+  },
+  {
+   "id": "no_text00",
+   "type": "no_text",
+   "prompt": "a plain cardboard shipping box with no text, no logo and no label, product photo on a pure white seamless background, studio lighting",
+   "constraint": "no text, letters, logo or label anywhere on the box",
+   "px_white_frac": 1.0,
+   "px_white": true,
+   "j1": {
+    "observed": "One plain kraft cardboard box with a lid, no printed letters, logos or labels visible on any face.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "One plain kraft cardboard box with a closed lid, no visible text, logo or label on any face.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "no_text01",
+   "type": "no_text",
+   "prompt": "a matte black water bottle with no text and no logo, product photo on a pure white seamless background, studio lighting",
+   "constraint": "no text, letters or logo on the bottle",
+   "px_white_frac": 0.983,
+   "px_white": true,
+   "j1": {
+    "observed": "Small faint markings, possibly tiny text or symbols, appear near the base of the bottle, so the no-text constraint is not clearly met.",
+    "constraint_met": false,
+    "white_background": true,
+    "any_text_visible": true
+   },
+   "j2": {
+    "observed": "Tiny faint marks near the bottom of the bottle look like small engraved characters or markings, so the no-text constraint is not clearly met.",
+    "constraint_met": false,
+    "white_background": true,
+    "any_text_visible": true
+   }
+  },
+  {
+   "id": "no_text02",
+   "type": "no_text",
+   "prompt": "a wristwatch with a blank dial, no numbers, no text, no logo, product photo on a pure white seamless background, studio lighting",
+   "constraint": "dial has no numbers, text or logo",
+   "px_white_frac": 0.673,
+   "px_white": false,
+   "j1": {
+    "observed": "The dial has small text near the center-left and right side (brand-like lettering) and the background is blurred with a tan/gold tint, so the dial is not blank.",
+    "constraint_met": false,
+    "white_background": false,
+    "any_text_visible": true
+   },
+   "j2": {
+    "observed": "The watch dial shows small tiny text near the center-left and right (brand-like writing) and a logo-like mark, so the dial is not blank.",
+    "constraint_met": false,
+    "white_background": false,
+    "any_text_visible": true
+   }
+  },
+  {
+   "id": "no_text03",
+   "type": "no_text",
+   "prompt": "a white t-shirt with no print, no text, no logo, product photo on a pure white seamless background, studio lighting",
+   "constraint": "no print, text or logo on the shirt",
+   "px_white_frac": 0.989,
+   "px_white": true,
+   "j1": {
+    "observed": "A plain white t-shirt with no print, text or logo, apart from a tiny faint speck near the upper chest.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "Plain white shirt with no visible print or text, but a tiny faint mark sits on the upper chest that could be a small logo.",
+    "constraint_met": false,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "no_text04",
+   "type": "no_text",
+   "prompt": "a glass jar of honey with no label and no text, product photo on a pure white seamless background, studio lighting",
+   "constraint": "no label or text on the jar",
+   "px_white_frac": 1.0,
+   "px_white": true,
+   "j1": {
+    "observed": "One glass honey jar with a metal lid and no label or printed text visible on the glass or contents.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "One glass jar of honey with a metallic lid and no label or printed text visible on the glass.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "no_text05",
+   "type": "no_text",
+   "prompt": "a plain white coffee cup with no text and no logo, product photo on a pure white seamless background, studio lighting",
+   "constraint": "no text or logo on the cup",
+   "px_white_frac": 0.998,
+   "px_white": true,
+   "j1": {
+    "observed": "One plain white mug with smooth surface and handle, no visible text or logo on it.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "One white mug with a handle, no printed text or logo visible on its surface.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "no_text06",
+   "type": "no_text",
+   "prompt": "a blank paperback book cover with no title and no text, product photo on a pure white seamless background, studio lighting",
+   "constraint": "no title or text on the book",
+   "px_white_frac": 0.723,
+   "px_white": false,
+   "j1": {
+    "observed": "A blank white book cover in the center with no title or text; green leaves appear in corners.",
+    "constraint_met": true,
+    "white_background": false,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "A blank white book cover sits centered with no title or text on it; only green leaves appear in the corners.",
+    "constraint_met": true,
+    "white_background": false,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "no_text07",
+   "type": "no_text",
+   "prompt": "a plain amber pill bottle with no label, product photo on a pure white seamless background, studio lighting",
+   "constraint": "no label or text on the bottle",
+   "px_white_frac": 1.0,
+   "px_white": true,
+   "j1": {
+    "observed": "One amber glass pill bottle with a black ridged cap and no label or printed text visible on its body.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "One amber glass pill bottle with a black ridged cap and no label or text visible on its body.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "no_text08",
+   "type": "no_text",
+   "prompt": "a smartphone with a black screen, no text, no logo, product photo on a pure white seamless background, studio lighting",
+   "constraint": "no text, logo or app icons on the phone",
+   "px_white_frac": 1.0,
+   "px_white": true,
+   "j1": {
+    "observed": "One smartphone with a wallpaper image of pink and orange layered swirls on the screen; no letters, logos, or app icons are visible.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "A single smartphone with a wallpaper showing abstract pink and orange swirls; no icons, text, or logos are visible on the screen or body.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "no_text09",
+   "type": "no_text",
+   "prompt": "a plain kraft paper shopping bag with no text and no logo, product photo on a pure white seamless background, studio lighting",
+   "constraint": "no text or logo on the bag",
+   "px_white_frac": 1.0,
+   "px_white": true,
+   "j1": {
+    "observed": "A single plain kraft paper shopping bag with rope-style handles and no visible printing, logo, or lettering on its surfaces.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "A single plain kraft paper shopping bag with two rope-like handles and no printed marks, text or logos visible on its surfaces.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "color00",
+   "type": "color",
+   "prompt": "a red mug next to a blue plate, product photo on a pure white seamless background, studio lighting",
+   "constraint": "the mug is red AND the plate is blue",
+   "px_white_frac": 1.0,
+   "px_white": true,
+   "j1": {
+    "observed": "One red mug sits on a blue saucer-style plate, with the mug on top of the plate rather than beside it.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "One red mug sits on a blue saucer-style plate; the mug is red and the plate is blue.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "color01",
+   "type": "color",
+   "prompt": "a yellow sneaker next to a black backpack, product photo on a pure white seamless background, studio lighting",
+   "constraint": "the sneaker is yellow AND the backpack is black",
+   "px_white_frac": 1.0,
+   "px_white": true,
+   "j1": {
+    "observed": "One yellow sneaker and one black backpack are visible, both clearly matching their colors.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "One yellow sneaker and one black backpack are visible, both clearly matching their colors.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "color02",
+   "type": "color",
+   "prompt": "a green handbag next to a pink scarf, product photo on a pure white seamless background, studio lighting",
+   "constraint": "the handbag is green AND the scarf is pink",
+   "px_white_frac": 0.966,
+   "px_white": true,
+   "j1": {
+    "observed": "One green handbag with gold hardware and one pink scarf with fringe are visible, both clearly matching their colors.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": true
+   },
+   "j2": {
+    "observed": "One green handbag with gold hardware and one pink scarf with fringe are clearly visible.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "color03",
+   "type": "color",
+   "prompt": "an orange water bottle next to a purple lunch box, product photo on a pure white seamless background, studio lighting",
+   "constraint": "the bottle is orange AND the lunch box is purple",
+   "px_white_frac": 1.0,
+   "px_white": true,
+   "j1": {
+    "observed": "One orange water bottle with a purple cap stands beside one purple lunch box with a gray handle and zipper.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "One orange water bottle stands beside one purple lunch box on a white background.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "color04",
+   "type": "color",
+   "prompt": "a blue lipstick next to a gold compact mirror, product photo on a pure white seamless background, studio lighting",
+   "constraint": "the lipstick is blue AND the compact is gold",
+   "px_white_frac": 0.983,
+   "px_white": true,
+   "j1": {
+    "observed": "Two blue lipsticks are visible, and the round compact mirror has a gold rim and gold lid, so both colour requirements are met.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "Two blue lipsticks are visible beside a gold-rimmed round compact mirror, so both colour requirements are satisfied.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "color05",
+   "type": "color",
+   "prompt": "a white headphone next to a red phone case, product photo on a pure white seamless background, studio lighting",
+   "constraint": "the headphones are white AND the phone case is red",
+   "px_white_frac": 0.493,
+   "px_white": false,
+   "j1": {
+    "observed": "One white over-ear headphone and one red phone case are visible; the background is light gray-white with a gradient, and small markings appear on the earcup.",
+    "constraint_met": true,
+    "white_background": false,
+    "any_text_visible": true
+   },
+   "j2": {
+    "observed": "One white over-ear headphone and one red phone case are visible; both colors match the constraint.",
+    "constraint_met": true,
+    "white_background": false,
+    "any_text_visible": true
+   }
+  },
+  {
+   "id": "color06",
+   "type": "color",
+   "prompt": "a brown leather belt next to a teal wallet, product photo on a pure white seamless background, studio lighting",
+   "constraint": "the belt is brown AND the wallet is teal",
+   "px_white_frac": 0.992,
+   "px_white": true,
+   "j1": {
+    "observed": "A tan-brown leather belt with gold buckle is wrapped around a teal textured wallet or pouch, so both colors are present.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "A brown leather belt with gold buckle is visible and a teal wallet-like item is behind it, both clearly present.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "color07",
+   "type": "color",
+   "prompt": "a black candle next to a white vase, product photo on a pure white seamless background, studio lighting",
+   "constraint": "the candle is black AND the vase is white",
+   "px_white_frac": 0.541,
+   "px_white": false,
+   "j1": {
+    "observed": "A glossy black candle sits in front of a white ceramic vase, with one black candle and one white vase visible.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "A black candle with a white leaf illustration sits in front of a white vase, so both colors match the constraint.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "color08",
+   "type": "color",
+   "prompt": "a silver watch next to a green notebook, product photo on a pure white seamless background, studio lighting",
+   "constraint": "the watch is silver AND the notebook is green",
+   "px_white_frac": 0.37,
+   "px_white": false,
+   "j1": {
+    "observed": "A silver watch rests on a green notebook; both constraint colors are clearly present, though the background is a bright white with blurred plant and object elements, not a seamless pure white.",
+    "constraint_met": true,
+    "white_background": false,
+    "any_text_visible": true
+   },
+   "j2": {
+    "observed": "A silver watch rests on a green notebook; both constraint colors are clearly present, though the background is a blurred white-grey scene with a plant and a white object rather than a seamless pure white.",
+    "constraint_met": true,
+    "white_background": false,
+    "any_text_visible": true
+   }
+  },
+  {
+   "id": "color09",
+   "type": "color",
+   "prompt": "a pink perfume bottle next to a black box, product photo on a pure white seamless background, studio lighting",
+   "constraint": "the perfume bottle is pink AND the box is black",
+   "px_white_frac": 0.856,
+   "px_white": false,
+   "j1": {
+    "observed": "Two pink-tinted perfume bottles stand in front of two black boxes; the bottles are pink and the boxes are black.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": true
+   },
+   "j2": {
+    "observed": "Two pink-tinted perfume bottles stand in front of two black boxes; the constraint asks for one pink perfume bottle next to a black box, and both boxes are black.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": true
+   }
+  },
+  {
+   "id": "spatial00",
+   "type": "spatial",
+   "prompt": "a sneaker on the left and a handbag on the right, product photo on a pure white seamless background, studio lighting",
+   "constraint": "sneaker is left of the handbag",
+   "px_white_frac": 0.983,
+   "px_white": true,
+   "j1": {
+    "observed": "The sneaker sits at the far left (about x 20-270) and the handbag at the right (about x 205-490), so the sneaker is left of the handbag.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": true
+   },
+   "j2": {
+    "observed": "The sneaker occupies the left side (roughly x 20-270) and the handbag the right side (roughly x 200-490), so the sneaker is left of the handbag.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": true
+   }
+  },
+  {
+   "id": "spatial01",
+   "type": "spatial",
+   "prompt": "a coffee cup on the left and a croissant on the right, product photo on a pure white seamless background, studio lighting",
+   "constraint": "cup is left of the croissant",
+   "px_white_frac": 0.942,
+   "px_white": true,
+   "j1": {
+    "observed": "A white mug with coffee sits on the left and a croissant on the right, so the cup is left of the croissant.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "One white coffee mug sits on the left and one croissant on the right, so the cup is left of the croissant.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "spatial02",
+   "type": "spatial",
+   "prompt": "a perfume bottle on top of a closed gift box, product photo on a pure white seamless background, studio lighting",
+   "constraint": "bottle is on top of the box",
+   "px_white_frac": 0.011,
+   "px_white": false,
+   "j1": {
+    "observed": "One perfume bottle sits directly on the lid of a closed tan gift box, with its base resting on the lid surface.",
+    "constraint_met": true,
+    "white_background": false,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "One perfume bottle sits directly on top of a closed tan gift box, with the box lid as its base.",
+    "constraint_met": true,
+    "white_background": false,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "spatial03",
+   "type": "spatial",
+   "prompt": "a watch on the left and a pair of sunglasses on the right, product photo on a pure white seamless background, studio lighting",
+   "constraint": "watch is left of the sunglasses",
+   "px_white_frac": 0.893,
+   "px_white": false,
+   "j1": {
+    "observed": "The watch is on the left side of the image and the sunglasses are on the right, so the watch is left of the sunglasses.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": true
+   },
+   "j2": {
+    "observed": "A silver watch sits on the left and a pair of black sunglasses sits on the right, so the watch is left of the sunglasses.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": true
+   }
+  },
+  {
+   "id": "spatial04",
+   "type": "spatial",
+   "prompt": "an apple on the left and a banana on the right, product photo on a pure white seamless background, studio lighting",
+   "constraint": "apple is left of the banana",
+   "px_white_frac": 1.0,
+   "px_white": true,
+   "j1": {
+    "observed": "One red apple sits on the left and one yellow banana on the right, so the apple is left of the banana.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "One red apple sits on the left and one yellow banana on the right, so the apple is left of the banana.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "spatial05",
+   "type": "spatial",
+   "prompt": "a candle in front of a tall glass vase, product photo on a pure white seamless background, studio lighting",
+   "constraint": "candle is in front of the vase",
+   "px_white_frac": 0.372,
+   "px_white": false,
+   "j1": {
+    "observed": "A small candle glass sits inside the tall glass cylinder at its base, so the candle is within the vase rather than in front of it.",
+    "constraint_met": false,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "A lit candle in a small glass holder sits inside the bottom of a tall cylindrical glass vase, so it is within the vase rather than in front of it.",
+    "constraint_met": false,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "spatial06",
+   "type": "spatial",
+   "prompt": "a pair of headphones resting on top of a laptop, product photo on a pure white seamless background, studio lighting",
+   "constraint": "headphones are on top of the laptop",
+   "px_white_frac": 0.984,
+   "px_white": true,
+   "j1": {
+    "observed": "A single pair of black over-ear headphones rests on top of a silver laptop, with the headband and earcups sitting on the lid.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": true
+   },
+   "j2": {
+    "observed": "One pair of black headphones rests on the surface of a single silver laptop, with the earcups sitting on the laptop's lid.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": true
+   }
+  },
+  {
+   "id": "spatial07",
+   "type": "spatial",
+   "prompt": "a lipstick on the right and a perfume bottle on the left, product photo on a pure white seamless background, studio lighting",
+   "constraint": "perfume bottle is left of the lipstick",
+   "px_white_frac": 0.88,
+   "px_white": false,
+   "j1": {
+    "observed": "The perfume bottle sits on the left and the lipstick on the right, so the constraint is met.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "The perfume bottle sits on the left side of the frame and the lipstick on the right, so the bottle is left of the lipstick.",
+    "constraint_met": true,
+    "white_background": false,
+    "any_text_visible": false
+   }
+  },
+  {
+   "id": "spatial08",
+   "type": "spatial",
+   "prompt": "a book with a pair of glasses lying on top of it, product photo on a pure white seamless background, studio lighting",
+   "constraint": "glasses are on top of the book",
+   "px_white_frac": 1.0,
+   "px_white": true,
+   "j1": {
+    "observed": "A single pair of purple-framed glasses rests on the top cover of a tan hardcover book, so the glasses are on top of the book.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": true
+   },
+   "j2": {
+    "observed": "One pair of purple-framed glasses rests on the top cover of a tan book, with the lenses and frame sitting fully on the book's surface.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": true
+   }
+  },
+  {
+   "id": "spatial09",
+   "type": "spatial",
+   "prompt": "a mug on the right and a teapot on the left, product photo on a pure white seamless background, studio lighting",
+   "constraint": "teapot is left of the mug",
+   "px_white_frac": 0.98,
+   "px_white": true,
+   "j1": {
+    "observed": "A teapot sits on the left and a mug on the right, so the teapot is left of the mug.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   },
+   "j2": {
+    "observed": "A teapot sits on the left and a mug on the right, so the teapot is left of the mug.",
+    "constraint_met": true,
+    "white_background": true,
+    "any_text_visible": false
+   }
+  }
+ ]
+}
